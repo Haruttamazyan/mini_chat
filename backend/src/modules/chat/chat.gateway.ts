@@ -34,7 +34,6 @@ export class ChatsGateway implements OnGatewayDisconnect {
     }
 
     client['username'] = username;
-    console.log(client["username"])
     this.connectedUsers.set(client.id, client);
 
     client.emit('previousMessages', this.messages);

@@ -38,7 +38,6 @@ const Chat: React.FC = () => {
 
     // Function to handle user existence check response
     const handleUserExist = (data: any) => {
-      console.log('userExist-->', data);
       setErr(data)
     };
 

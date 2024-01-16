@@ -6,10 +6,6 @@ interface MessagesProps {
 }
 
 const Messages: React.FC<MessagesProps> = memo(({ message, owner }) => {
-  useEffect(() => {
-    // Some side effect that depends on external variables or state
-    console.log("Component is rendered or updated");
-  }, []); // Add dependencies if needed
 
   return (
     <div key={message.id} className={`message ${message.username === owner ? 'admin' : 'user'}`}>

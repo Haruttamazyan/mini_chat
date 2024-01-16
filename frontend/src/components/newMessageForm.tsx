@@ -8,7 +8,6 @@ const NewMessageForm: React.FC<NewMessageFormProps> = memo(({ sendNewMessage }) 
   const [message, setMessage] = useState('');
 
   const send = useCallback(() => {
-      console.log('asfasf===>', message)
       sendNewMessage(message)
       setMessage('')
   },[message])
